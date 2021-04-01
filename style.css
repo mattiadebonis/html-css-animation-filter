@@ -1,19 +1,18 @@
+/* stile 1*/
 .ex-1-square {
     width: 100px;
     height: 100px;
     border: 1px solid red;
     transition: 2s;
 }
-
+/* esercizio 1*/
 .ex-1-square:hover {
     width: 100px;
     height: 100px;
     border: 1px solid red;
     background-color: red ;
-
-    
 }
-
+/* stile 2*/
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -21,34 +20,34 @@
     transition: 2s;
     animation-timing-function:ease-in-out;
 }
-
 .ex-2-square:active {
     width: 100%;
     height: 100px;
     background: red;
 }
 
+/* stile 3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
     transition: 1s;
 }
-
+/* esercizio 3*/
 .ex-3-square:hover {
     width: 100px;
     height: 100px;
     background: red;
     border-radius: 100%;
 }
-
+/* stile 4*/
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
     transition: 1s;
 }
-
+/* esercizio 4*/
 .ex-4-square:hover {
     width: 100px;
     height: 100px;
@@ -56,7 +55,7 @@
     opacity: 0;
 }
 
-
+/* stile 5*/
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -64,6 +63,7 @@
     background: red;
     transition:1s;
 }
+/* esercizio 5*/
 .ex-5-square:hover {
     transform: scale(2);
     background: red;
@@ -74,11 +74,13 @@
     background: red;
 }
 
+/* stile immagine 6 - 7 - 8 */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
-.ex-7-img, .ex-7-img, .ex-8-img, .ex-9-img{
+/* esercizi 6 - 7 - 8 */
+.ex-7-img, .ex-8-img, .ex-9-img{
     transition: 2s;
 }
 
@@ -95,21 +97,25 @@
     border-radius: 15px;
 }
 
+/* stile immagine 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
 
+/*esercizio 9*/
 .ex-9-img:hover{
     filter: grayscale(.6) sepia(.5);
     border-radius: 15px;
     transform: scale(1.5);
 }
 
+/* stile icone 10 e 11 */
 .ex-10-icon, .ex-11-icon{
     font-size: 60px;
 }
 
+/*esercizio 10 */
 .ex-10-icon{
     animation: rotazione linear infinite;
     animation-duration: 1s;
@@ -123,7 +129,7 @@
 }
 
 
-
+/*esercizio 11 */
 .ex-11-icon:hover{
     animation: rotazione-2;
     animation-duration: 2s;
@@ -141,6 +147,8 @@
         transform: rotate(0);
     }
 }
+
+/* stili button */
 
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -171,3 +179,106 @@
     width: 60px;
     height: 20px;
 }
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+}
+@keyframes move-top{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-bottom;
+    animation-duration: 2s;
+}
+@keyframes move-bottom{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }   
+    100%{
+        right: 20%;
+    }
+}
+
+
+/* esercizio 13 */
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move-top-fast;
+    animation-duration: 2s;
+}
+
+@keyframes move-bottom-fast{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    30%{
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75%{
+        left: 0;
+        top: 100%;
+    }
+    90%{
+        left: -15px;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: move-bottom-fast;
+    animation-duration: 2s;
+}
+
+@keyframes move-top-fast{
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    30%{
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45%{
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75%{
+        right: 0;
+        bottom: 100%;
+    }
+    90%{
+        right: -15px;
+        bottom: -10px;
+    }
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
+
