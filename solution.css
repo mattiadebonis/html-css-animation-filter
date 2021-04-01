@@ -1,0 +1,19 @@
+.esercizio-1{
+    animation-name: animazione-1;
+    animation-duration: 2s;
+    transition-timing-function: ease;
+
+
+}
+
+@keyframes animazione-1{
+    0%{
+        background-color: none;
+
+    }
+    100%{
+            background-color:red;
+    }
+
+
+}
